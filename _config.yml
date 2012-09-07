@@ -1,0 +1,11 @@
+auto: false
+auto: true
+server: false
+lsi: false
+pygments: true
+permalink: /:title
+paginate: 10
+exclude: ["Rakefile", "LICENSE.txt", "CNAME"]
+title: UnitGS Demo
+url: http://demo.unit.gs
+github_user: bernardoantunes

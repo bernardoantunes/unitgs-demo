@@ -1,0 +1,44 @@
+﻿//Demo site colors.
+$settings-colors-darkgray: #333;
+$settings-colors-lessdarkergray: #444;
+$settings-colors-lightgray: #eee;
+$settings-colors-pink: rgb(236, 121, 167);
+$settings-colors-blue: rgb(121, 167, 236);
+
+body {
+	font-family: 'Open Sans',sans-serif;
+	font-weight: 400;
+	background-color: $settings-colors-darkgray;
+	color: $settings-colors-lightgray;
+}
+
+//Text selection style.
+$text-selector-prefixes: ("-webkit-","-moz-", "-o-", "");
+@each $text-selector-prefix in $text-selector-prefixes {
+    ::#{$text-selector-prefix}selection {
+		background: $settings-colors-pink;
+		color: $settings-colors-lightgray;
+    }
+}
+
+nav{
+	a {
+		color: $settings-colors-lightgray;
+		font-weight: 800;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+	a:visited { color: $settings-colors-lightgray; }
+	a:hover { color: $settings-colors-blue; }
+	a.current { background-color: $settings-colors-pink; }
+	a:hover.current { color: $settings-colors-lightgray; }
+}
+
+header {
+	font-weight: 800;
+	text-align: center;
+}
+
+footer { text-align: center; }
+
+* { transition: all 1s; }

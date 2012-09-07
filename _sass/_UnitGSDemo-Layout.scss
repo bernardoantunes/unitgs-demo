@@ -1,0 +1,57 @@
+﻿@import "UnitGS";
+
+$grid-debug: false;
+@if $grid-debug { body { color: #333; }}
+
+@include unitgs-set-grid-settings(
+	$number-of-columns: 25,
+	$number-of-active-columns: 24,
+	$font-size: 1,
+	$line-height: 1.5,
+	$gutter-width: 1
+	);
+
+@include unitgs-init-grid();
+
+header { @include grid-unit($font-size: 1.5, $margin-top: 1, $margin-bottom: 1); }
+nav {
+	@include grid-unit($margin-bottom: 1);
+
+	a {
+		@include grid-line($font-size: 0.9);
+		display: block;
+		padding: 0 1em;
+	}
+}
+#sectionA { @include grid-unit($margin-bottom: 1); }
+#sectionB { @include grid-unit(); }
+footer { @include grid-unit($font-size: 0.75, $margin-top: 1, $margin-bottom: 1); }
+
+//480
+@media screen and (min-width: 30em) {
+	header { @include grid-line($font-size: 2.5, $margin-top: 1/2, $margin-bottom: 1/2); }
+}
+
+//640
+@media screen and (min-width: 40em) {
+	nav a {
+		display: inline;
+		@include grid-line(1);
+	}
+}
+
+//720
+@media screen and (min-width: 45em) {
+	#sectionA { @include grid-unit(1/2, $margin-bottom: 0); }
+	#sectionB { @include grid-unit(1/2, last); }
+}
+
+//960
+@media screen and (min-width: 60em) {
+	@include unitgs-set-grid-scale(1.2);
+}
+
+#asDesigned {
+	max-width: 60em;
+	margin: 0 auto;
+}

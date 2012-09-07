@@ -1,0 +1,577 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+/* line 17, ../_sass/_Boilerplate-before.scss */
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+
+/* line 21, ../_sass/_Boilerplate-before.scss */
+body {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/* line 26, ../_sass/_Boilerplate-before.scss */
+a {
+  color: #00e;
+}
+
+/* line 30, ../_sass/_Boilerplate-before.scss */
+a:visited {
+  color: #551a8b;
+}
+
+/* line 34, ../_sass/_Boilerplate-before.scss */
+a:hover {
+  color: #06e;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+/* line 44, ../_sass/_Boilerplate-before.scss */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 49, ../_sass/_Boilerplate-before.scss */
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+/* line 58, ../_sass/_Boilerplate-before.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+/* line 71, ../_sass/_Boilerplate-before.scss */
+img {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+/* line 79, ../_sass/_Boilerplate-before.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+/* line 89, ../_sass/_Boilerplate-before.scss */
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+/* line 97, ../_sass/_Boilerplate-before.scss */
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* line 8, ../_sass/_UnitGSDemo-Style.scss */
+body {
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 400;
+  background-color: #333333;
+  color: #eeeeee;
+}
+
+/* line 18, ../_sass/_UnitGSDemo-Style.scss */
+::-webkit-selection {
+  background: #ec79a7;
+  color: #eeeeee;
+}
+
+/* line 18, ../_sass/_UnitGSDemo-Style.scss */
+::-moz-selection {
+  background: #ec79a7;
+  color: #eeeeee;
+}
+
+/* line 18, ../_sass/_UnitGSDemo-Style.scss */
+::-o-selection {
+  background: #ec79a7;
+  color: #eeeeee;
+}
+
+/* line 18, ../_sass/_UnitGSDemo-Style.scss */
+::selection {
+  background: #ec79a7;
+  color: #eeeeee;
+}
+
+/* line 25, ../_sass/_UnitGSDemo-Style.scss */
+nav a {
+  color: #eeeeee;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/* line 31, ../_sass/_UnitGSDemo-Style.scss */
+nav a:visited {
+  color: #eeeeee;
+}
+/* line 32, ../_sass/_UnitGSDemo-Style.scss */
+nav a:hover {
+  color: #79a7ec;
+}
+/* line 33, ../_sass/_UnitGSDemo-Style.scss */
+nav a.current {
+  background-color: #ec79a7;
+}
+/* line 34, ../_sass/_UnitGSDemo-Style.scss */
+nav a:hover.current {
+  color: #eeeeee;
+}
+
+/* line 37, ../_sass/_UnitGSDemo-Style.scss */
+header {
+  font-weight: 800;
+  text-align: center;
+}
+
+/* line 42, ../_sass/_UnitGSDemo-Style.scss */
+footer {
+  text-align: center;
+}
+
+/* line 44, ../_sass/_UnitGSDemo-Style.scss */
+* {
+  transition: all 1s;
+}
+
+/* line 419, ../_sass/_UnitGS.scss */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, a, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, nav, section, menu, time, mark, audio, video, canvas {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* line 431, ../_sass/_UnitGS.scss */
+body {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+/* line 16, ../_sass/_UnitGSDemo-Layout.scss */
+header {
+  font-size: 1.5em;
+  line-height: 2;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  width: 96%;
+  margin-left: 2%;
+  margin-right: 2%;
+  float: left;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  clear: both;
+  display: inline;
+}
+
+/* line 17, ../_sass/_UnitGSDemo-Layout.scss */
+nav {
+  font-size: 1em;
+  line-height: 1.5;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 1.5em;
+  width: 96%;
+  margin-left: 2%;
+  margin-right: 2%;
+  float: left;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  clear: both;
+  display: inline;
+}
+/* line 20, ../_sass/_UnitGSDemo-Layout.scss */
+nav a {
+  font-size: 0.9em;
+  line-height: 1.667;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: block;
+  padding: 0 1em;
+}
+
+/* line 26, ../_sass/_UnitGSDemo-Layout.scss */
+#sectionA {
+  font-size: 1em;
+  line-height: 1.5;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 1.5em;
+  width: 96%;
+  margin-left: 2%;
+  margin-right: 2%;
+  float: left;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  clear: both;
+  display: inline;
+}
+
+/* line 27, ../_sass/_UnitGSDemo-Layout.scss */
+#sectionB {
+  font-size: 1em;
+  line-height: 1.5;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 96%;
+  margin-left: 2%;
+  margin-right: 2%;
+  float: left;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  clear: both;
+  display: inline;
+}
+
+/* line 28, ../_sass/_UnitGSDemo-Layout.scss */
+footer {
+  font-size: 0.75em;
+  line-height: 2;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  width: 96%;
+  margin-left: 2%;
+  margin-right: 2%;
+  float: left;
+  padding-left: 1em;
+  padding-right: 1em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  clear: both;
+  display: inline;
+}
+
+@media screen and (min-width: 30em) {
+  /* line 32, ../_sass/_UnitGSDemo-Layout.scss */
+  header {
+    font-size: 2.5em;
+    line-height: 1.8;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+  }
+}
+@media screen and (min-width: 40em) {
+  /* line 37, ../_sass/_UnitGSDemo-Layout.scss */
+  nav a {
+    display: inline;
+    font-size: 1em;
+    line-height: 1.5;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 45em) {
+  /* line 45, ../_sass/_UnitGSDemo-Layout.scss */
+  #sectionA {
+    font-size: 1em;
+    line-height: 1.5;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 48%;
+    margin-left: 2%;
+    margin-right: 0%;
+    float: left;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    clear: left;
+    display: inline;
+  }
+
+  /* line 46, ../_sass/_UnitGSDemo-Layout.scss */
+  #sectionB {
+    font-size: 1em;
+    line-height: 1.5;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 48%;
+    margin-left: 0%;
+    margin-right: 2%;
+    float: left;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    clear: none;
+    display: inline;
+  }
+}
+@media screen and (min-width: 60em) {
+  /* line 372, ../_sass/_UnitGS.scss */
+  body {
+    font-size: 1.2em;
+  }
+}
+/* line 54, ../_sass/_UnitGSDemo-Layout.scss */
+#asDesigned {
+  max-width: 60em;
+  margin: 0 auto;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Image replacement
+ */
+/* line 9, ../_sass/_Boilerplate-after.scss */
+.ir {
+  border: 0;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  background-color: transparent;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+/* line 21, ../_sass/_Boilerplate-after.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+/* line 30, ../_sass/_Boilerplate-after.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+/* line 47, ../_sass/_Boilerplate-after.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+/* line 60, ../_sass/_Boilerplate-after.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/**
+ * Clearfix helper
+ * Used to contain floats: h5bp.com/q
+ */
+/* line 70, ../_sass/_Boilerplate-after.scss */
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+/* line 75, ../_sass/_Boilerplate-after.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+/* line 84, ../_sass/_Boilerplate-after.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+@media print {
+  /* line 104, ../_sass/_Boilerplate-after.scss */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* line 112, ../_sass/_Boilerplate-after.scss */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 116, ../_sass/_Boilerplate-after.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 120, ../_sass/_Boilerplate-after.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  /* line 130, ../_sass/_Boilerplate-after.scss */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  /* line 135, ../_sass/_Boilerplate-after.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 140, ../_sass/_Boilerplate-after.scss */
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */
+  }
+
+  /* line 145, ../_sass/_Boilerplate-after.scss */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  /* line 149, ../_sass/_Boilerplate-after.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  /* line 159, ../_sass/_Boilerplate-after.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 165, ../_sass/_Boilerplate-after.scss */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
