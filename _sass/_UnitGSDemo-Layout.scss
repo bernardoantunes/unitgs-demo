@@ -1,5 +1,10 @@
 ﻿@import "UnitGS";
 
+//Update for Sidemode in IE 10 in Windows 8.
+@-ms-viewport{
+    width: device-width;
+}
+
 $grid-debug: false;
 @if $grid-debug { body { color: #333; }}
 
