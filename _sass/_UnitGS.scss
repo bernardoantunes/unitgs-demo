@@ -1,6 +1,6 @@
 ﻿//
 //
-//  Unit Grid System (0.9) 	<http://unit.gs/>
+//  Unit Grid System (0.9) 	<http://unitgs.bernardoantunes.com/>
 //  by Bernardo Antunes		<http://bernardoantunes.com/>
 //  licensed under MIT 		<http://opensource.org/licenses/mit-license.php>
 //	
@@ -8,16 +8,16 @@
 
 //                              DOCUMENTATION
 //
-//  You can access the documentation of the grid with examples in http://unit.gs/documentation
+//  You can access the documentation of the grid with examples in http://unitgs.bernardoantunes.com/documentation
 //
 //  To get the documentation of a specific element access the following:
-//  http://unit.gs/<item-type>-<item-name>
+//  http://unitgs.bernardoantunes.com/<item-type>-<item-name>
 //
 //  Examples:
 //
-//  $grid-debug -> http://unit.gs/variable-grid-debug
-//  @function utils-units-convert-to-ems -> http://unit.gs/function-utils-units-convert-to-ems-grid-debug
-//  @mixin grid-unit -> http://unit.gs/mixin-grid-unit
+//  $grid-debug -> http://unitgs.bernardoantunes.com/variable-grid-debug
+//  @function utils-units-convert-to-ems -> http://unitgs.bernardoantunes.com/function-utils-units-convert-to-ems-grid-debug
+//  @mixin grid-unit -> http://unitgs.bernardoantunes.com/mixin-grid-unit
 //
 
 //Activates the debug mode.
@@ -355,7 +355,7 @@ $unitgs-settings-grid-unit-default-height: $unitgs-settings-grid-line-default-he
 		information, "");
 }
 
-//http://unit.gs/mixin-unitgs-set-grid-scale/
+//http://unitgs.bernardoantunes.com/mixin-unitgs-set-grid-scale/
 @mixin unitgs-set-grid-scale($scale: undefined, $wrapper-tag: undefined) {
 
 	//If undefined, use the default value.
@@ -385,7 +385,7 @@ $unitgs-settings-grid-unit-default-height: $unitgs-settings-grid-line-default-he
 //Resets except for form elements
 $unitgs-settings-default-reset-tags-list: html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, a, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, nav, section, menu, time, mark, audio, video, canvas !default;
 $unitgs-settings-default-wrapper-tag: body !default;
-//http://unit.gs/mixin-unitgs-init-grid/
+//http://unitgs.bernardoantunes.com/mixin-unitgs-init-grid/
 @mixin unitgs-init-grid($scale: undefined, $wrapper-tag: undefined, $reset-tags-list: undefined) {
 
 	//Lets check if the unitgs-init-grid was already called and warn if it was.
@@ -715,7 +715,7 @@ $unitgs-settings-default-wrapper-tag: body !default;
 }
 
 //@mixin grid-unit
-//http://unit.gs/mixin-grid-unit/
+//http://unitgs.bernardoantunes.com/mixin-grid-unit/
 @mixin grid-unit(
 	$width: undefined,
 	$position: undefined,
@@ -882,7 +882,7 @@ $unitgs-settings-default-wrapper-tag: body !default;
 }
 
 //@mixin grid-line
-//http://unit.gs/mixin-grid-line/
+//http://unitgs.bernardoantunes.com/mixin-grid-line/
 @mixin grid-line(
 	$font-size: undefined,
 	$line-height: undefined,
