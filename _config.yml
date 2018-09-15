@@ -7,5 +7,5 @@ permalink: /:title
 paginate: 10
 exclude: ["Rakefile", "LICENSE.txt", "CNAME"]
 title: UnitGS Demo
-url: http://demo.unit.gs
+url: http://demo.unitgs.bernardoantunes.com
 github_user: bernardoantunes
